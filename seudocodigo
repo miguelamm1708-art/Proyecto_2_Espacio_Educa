@@ -1,0 +1,73 @@
+•Inicio 
+
+•Se crea una variable vacia para almacenar el nobre de usuario ('username').
+
+•Preguntar al usuario: "¿Quieres jugar al ahorcado?. si o no".
+
+•Validar Entrada: Mientras la respuesta no sea "si" ni "no", solicitar al usuario que ingrese "si" o "no".
+
+•Si la respuesta es "no":
+
+    •Le hace saber al usuario que el juegose cerro y cierra el juego.
+
+•Siempre y cuando la respuesta sea "si" el bucle principal del juego se ejecutara:
+
+    •Solicitar el nombre del usuario y hacele saber que empezo el juego.
+
+    •Definir una lista de posibles palabras (pájaro, tortuga, serpiente, ...).
+
+    •Seleccionar una palabra al azar de la lista y guardarla en otra variable.
+
+    •Se crea un arreglo de guiones bajos con la misma longitud que la palabra secreta.
+
+    •Establecer los intentos que tiene el usuario sean igual a la longitud de la palabra secreta.
+
+    •Se declara un arreglo vacío llamado letrasUsadas.
+
+    •Mientras los intentos que le quedan al usuario sean mayores a 0 Y queden letras por adivianar:
+
+        •Mostrar el estado actual de la palabra, mostrando los guiones y las letras adivinadas.
+
+        •Mostrar las letras que ya se intentaron y cuántos intentos quedan.
+
+        •Solicitar una letra al usuario.
+
+        •Validar si la Letra es valida (a-z), si no lo es pedir otra.
+
+            •Si la letra ya está en el arreglo de letras usadas, avisar al usuario y pedir otra.
+
+        •Agregar la letra válida al arreglo letras usadas.
+
+        •Evaluar Acierto:
+
+            •Si la letra está en palabra secreta:
+
+                •Recorrer la palabra y actualizar los guiones en las posiciones que coincida la letra adivinada.
+
+                •Informar al usuario del acierto.
+
+            •Si la letra ingresada esta:
+
+                •Restar 1 un intento al usuario.
+
+                •Informar al usuario del fallo.
+
+    •Fin del bucle de la partida.
+
+    •Si se adivinaron todas las letras:
+
+        •Mostrar mensaje de victoria felicitando al usuario y afirmar la palabra.
+
+    •Si se acabaron todos los intentos restantes:
+
+        •Mostrar mensaje de derrota y revelar la palabra secreta.
+
+    •Preguntar si desea volver a jugar.
+
+    •Mientras la respuesta no sea "si" ni "no", solicitar respuesta válida.
+
+    •Si la respuesta final es "no", despedirse y cerrar la interfaz.
+
+    •si la respuesta es "si", volver a cargar el juego.
+
+•Fin
