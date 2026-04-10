@@ -8,11 +8,11 @@
 
 •Si la respuesta es "no":
 
-    •Le hace saber al usuario que el juegose cerro y cierra el juego.
+    •Le hace saber al usuario que el juego se cerro y cierra el juego.
+
+•Solicitar el nombre del usuario y hacele saber que empezo el juego.
 
 •Siempre y cuando la respuesta sea "si" el bucle principal del juego se ejecutara:
-
-    •Solicitar el nombre del usuario y hacele saber que empezo el juego.
 
     •Definir una lista de posibles palabras (pájaro, tortuga, serpiente, ...).
 
@@ -32,35 +32,37 @@
 
         •Solicitar una letra al usuario.
 
-        •Validar si la Letra es valida (a-z), si no lo es pedir otra.
+        •se crea una funcion que maneje toda la logica de los aciertos y derrotas.
 
-            •Si la letra ya está en el arreglo de letras usadas, avisar al usuario y pedir otra.
+            •Validar si la Letra es valida (a-z), si no lo es pedir otra.
 
-        •Agregar la letra válida al arreglo letras usadas.
+                •Si la letra ya está en el arreglo de letras usadas, avisar al usuario y pedir otra.
 
-        •Evaluar Acierto:
+            •Agregar la letra válida al arreglo letras usadas.
 
-            •Si la letra está en palabra secreta:
+            •Evaluar Acierto:
 
-                •Recorrer la palabra y actualizar los guiones en las posiciones que coincida la letra adivinada.
+                •Si la letra está en palabra secreta:
 
-                •Informar al usuario del acierto.
+                    •Recorrer la palabra y actualizar los guiones en las posiciones que coincida la letra adivinada.
 
-            •Si la letra ingresada esta:
+                    •Informar al usuario del acierto.
 
-                •Restar 1 un intento al usuario.
+                •Si la letra ingresada esta:
 
-                •Informar al usuario del fallo.
+                    •Restar 1 un intento al usuario.
 
-    •Fin del bucle de la partida.
+                    •Informar al usuario del fallo.
 
-    •Si se adivinaron todas las letras:
+    •Funcion que dertermina si se gano o perdio:
 
-        •Mostrar mensaje de victoria felicitando al usuario y afirmar la palabra.
+        •Si se adivinaron todas las letras:
 
-    •Si se acabaron todos los intentos restantes:
+            •Mostrar mensaje de victoria felicitando al usuario y afirmar la palabra.
 
-        •Mostrar mensaje de derrota y revelar la palabra secreta.
+        •Si se acabaron todos los intentos restantes:
+
+            •Mostrar mensaje de derrota y revelar la palabra secreta.
 
     •Preguntar si desea volver a jugar.
 
