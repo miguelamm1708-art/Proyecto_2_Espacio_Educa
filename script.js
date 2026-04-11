@@ -97,7 +97,7 @@ async function iniciarJuego() {
         }
 
         if (inicio === "no"){
-            console.log("\nOk, " + username + " estare aqui cuando quieras jugar.");
+            console.log("\nOk, " + nombreUsuario + " estare aqui cuando quieras jugar.");
             return rl.close();
         }
     }
