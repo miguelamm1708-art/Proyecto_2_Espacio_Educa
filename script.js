@@ -29,7 +29,7 @@ async function iniciarJuego() {
 
     let nombreUsuario = "";
     nombreUsuario = await getUserInput("¿Como puedo llamarte?");
-    console.log("¡Hola " + username + "! Vamos a jugar al Ahorcado.");
+    console.log("¡Hola " + nombreUsuario + "! Vamos a jugar al Ahorcado.");
     
     while (inicio === "si" ) {
         
